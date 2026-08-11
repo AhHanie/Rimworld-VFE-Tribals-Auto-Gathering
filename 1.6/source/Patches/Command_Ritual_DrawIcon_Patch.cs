@@ -11,7 +11,7 @@ namespace VFE_Tribals_Auto_Gathering
     {
         private static readonly IntVec2 BadgeSize = new IntVec2(20, 20);
 
-        private static readonly Texture2D AutoGatheringBadgeTex = ContentFinder<Texture2D>.Get("UI/Icons/AutoGathering");
+        private static readonly Texture2D AutoGatheringBadgeTex = ContentFinder<Texture2D>.Get("AutoGathering/UI/Icons/AutoGathering");
 
         public static void Postfix(Rect rect, Precept_Ritual ___ritual, TargetInfo ___targetInfo)
         {
