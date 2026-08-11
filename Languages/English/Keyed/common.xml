@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <VFETribalsAutoGathering.LoadingLabel>VFE Tribals Auto Gathering Loading</VFETribalsAutoGathering.LoadingLabel>
+    <VFETribalsAutoGathering.ScheduleEnabled>Tribal gathering scheduled to begin daily at this time.</VFETribalsAutoGathering.ScheduleEnabled>
+    <VFETribalsAutoGathering.ScheduleDisabled>Daily tribal gathering schedule disabled.</VFETribalsAutoGathering.ScheduleDisabled>
+    <VFETribalsAutoGathering.ScheduleCancelled>Daily tribal gathering schedule cancelled because its gathering spot is no longer valid.</VFETribalsAutoGathering.ScheduleCancelled>
+</LanguageData>
