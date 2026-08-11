@@ -21,8 +21,10 @@ namespace VFE_Tribals_Auto_Gathering
             }
 
             string hourText = hourOfDay.ToString() + "LetterHour".Translate();
-            __result += "\n\n" + "VFETribalsAutoGathering.TooltipHeader".Translate().Colorize(ColoredText.TipSectionTitleColor)
-                + "\n" + "VFETribalsAutoGathering.TooltipEnabledAt".Translate(hourText);
+            string title = "VFETribalsAutoGathering.TooltipHeader".Translate().Resolve();
+            string coloredTitle = title.Colorize(ColoredText.TipSectionTitleColor);
+            string enabledLine = "VFETribalsAutoGathering.TooltipEnabledAt".Translate(hourText).Resolve();
+            __result = string.Concat(__result, "\n\n", coloredTitle, "\n", enabledLine);
         }
     }
 }
