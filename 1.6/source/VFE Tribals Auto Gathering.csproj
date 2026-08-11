@@ -60,7 +60,9 @@
     <Compile Include="Mod.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="AutoTribalGatheringGameComponent.cs" />
-    <Compile Include="Patches\Command_Ritual_ProcessInput_Patch.cs" />
+    <Compile Include="Patches\Command_Ritual_GizmoOnGUIInt_Patch.cs" />
+    <Compile Include="Patches\Command_Ritual_DrawIcon_Patch.cs" />
+    <Compile Include="Patches\Command_Ritual_DescPostfix_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

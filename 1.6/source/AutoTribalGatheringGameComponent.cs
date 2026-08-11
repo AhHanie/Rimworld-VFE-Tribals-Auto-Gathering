@@ -46,6 +46,18 @@ namespace VFE_Tribals_Auto_Gathering
             return scheduledRitual == ritual && scheduledTarget == target;
         }
 
+        public bool TryGetScheduledHour(Precept_Ritual ritual, TargetInfo target, out int hourOfDay)
+        {
+            if (IsScheduledFor(ritual, target))
+            {
+                hourOfDay = scheduledLocalDayTick / GenDate.TicksPerHour;
+                return true;
+            }
+
+            hourOfDay = -1;
+            return false;
+        }
+
         public override void GameComponentTick()
         {
             if (scheduledRitual == null || nextExecutionAbsTick < 0L || GenTicks.TicksAbs < nextExecutionAbsTick)
