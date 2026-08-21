@@ -117,7 +117,7 @@ namespace VFE_Tribals_Auto_Gathering
 
             Dialog_BeginRitual.PawnFilter filter = delegate(Pawn pawn, bool voluntary, bool allowOtherIdeos)
             {
-                if (pawn.GetLord() != null || pawn.IsSubhuman)
+                if (pawn.GetLord() != null || pawn.IsSubhuman || pawn.Drafted)
                 {
                     return false;
                 }
