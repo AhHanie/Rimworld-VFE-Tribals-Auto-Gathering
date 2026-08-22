@@ -117,6 +117,11 @@ namespace VFE_Tribals_Auto_Gathering
 
             Dialog_BeginRitual.PawnFilter filter = delegate(Pawn pawn, bool voluntary, bool allowOtherIdeos)
             {
+                if (ModSettings.ExcludePawnsWithPlayerForcedJobs && HasPlayerForcedJob(pawn))
+                {
+                    return false;
+                }
+
                 if (pawn.GetLord() != null || pawn.IsSubhuman || pawn.Drafted)
                 {
                     return false;
@@ -138,6 +143,17 @@ namespace VFE_Tribals_Auto_Gathering
             }
 
             scheduledRitual.behavior.TryExecuteOn(scheduledTarget, null, scheduledRitual, null, assignments, playerForced: true);
+        }
+
+        private static bool HasPlayerForcedJob(Pawn pawn)
+        {
+            if (pawn.CurJob != null && pawn.CurJob.playerForced)
+            {
+                return true;
+            }
+
+            return pawn.jobs != null && pawn.jobs.jobQueue != null
+                && pawn.jobs.jobQueue.Any(queuedJob => queuedJob != null && queuedJob.job != null && queuedJob.job.playerForced);
         }
 
         private bool AssignmentsCanStart(RitualRoleAssignments assignments)

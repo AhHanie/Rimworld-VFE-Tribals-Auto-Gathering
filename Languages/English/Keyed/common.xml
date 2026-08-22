@@ -6,4 +6,7 @@
     <VFETribalsAutoGathering.ScheduleCancelled>Daily tribal gathering schedule cancelled because its gathering spot is no longer valid.</VFETribalsAutoGathering.ScheduleCancelled>
     <VFETribalsAutoGathering.TooltipHeader>Auto gathering:</VFETribalsAutoGathering.TooltipHeader>
     <VFETribalsAutoGathering.TooltipEnabledAt>Auto gathering is enabled at {0}</VFETribalsAutoGathering.TooltipEnabledAt>
+    <VFETribalsAutoGathering.SettingsTitle>VFE Tribals Auto Gathering</VFETribalsAutoGathering.SettingsTitle>
+    <VFETribalsAutoGathering.ExcludePlayerForcedPawnsLabel>Do not auto-gather pawns with player orders</VFETribalsAutoGathering.ExcludePlayerForcedPawnsLabel>
+    <VFETribalsAutoGathering.ExcludePlayerForcedPawnsTooltip>When enabled, pawns with an active or queued direct player order are excluded from the automatic daily tribal gathering. This only affects the automated gathering; it does not change manually started rituals.</VFETribalsAutoGathering.ExcludePlayerForcedPawnsTooltip>
 </LanguageData>
