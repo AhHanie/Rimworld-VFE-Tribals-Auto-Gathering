@@ -9,4 +9,6 @@
     <VFETribalsAutoGathering.SettingsTitle>VFE Tribals Auto Gathering</VFETribalsAutoGathering.SettingsTitle>
     <VFETribalsAutoGathering.ExcludePlayerForcedPawnsLabel>Do not auto-gather pawns with player orders</VFETribalsAutoGathering.ExcludePlayerForcedPawnsLabel>
     <VFETribalsAutoGathering.ExcludePlayerForcedPawnsTooltip>When enabled, pawns with an active or queued direct player order are excluded from the automatic daily tribal gathering. This only affects the automated gathering; it does not change manually started rituals.</VFETribalsAutoGathering.ExcludePlayerForcedPawnsTooltip>
+    <VFETribalsAutoGathering.ExcludeMedicalRestPawnsLabel>Do not auto-gather pawns needing medical rest</VFETribalsAutoGathering.ExcludeMedicalRestPawnsLabel>
+    <VFETribalsAutoGathering.ExcludeMedicalRestPawnsTooltip>When enabled, pawns who need medical rest (untreated injuries, surgery, labour, or an unresolved disease) are excluded from the automatic daily tribal gathering. This only affects the automated gathering; it does not change manually started rituals.</VFETribalsAutoGathering.ExcludeMedicalRestPawnsTooltip>
 </LanguageData>
