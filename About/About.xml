@@ -7,7 +7,7 @@
         <li>1.6</li>
     </supportedVersions>
     <description>Adds daily automation for Vanilla Factions Expanded - Tribals' tribal gathering research ritual. Right-click the tribal gathering gizmo at an active gathering spot to schedule it to begin automatically at that same local time each day. Right-click it again to disable the schedule.</description>
-    <modVersion>1.2.1</modVersion>
+    <modVersion>1.2.2</modVersion>
     <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3781460271</url>
     <modDependencies>
         <li>

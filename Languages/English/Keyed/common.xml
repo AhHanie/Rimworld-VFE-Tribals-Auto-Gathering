@@ -4,6 +4,7 @@
     <VFETribalsAutoGathering.ScheduleEnabled>Tribal gathering is now scheduled to begin daily at this time.</VFETribalsAutoGathering.ScheduleEnabled>
     <VFETribalsAutoGathering.ScheduleDisabled>Daily tribal gathering schedule disabled.</VFETribalsAutoGathering.ScheduleDisabled>
     <VFETribalsAutoGathering.ScheduleCancelled>Daily tribal gathering schedule cancelled because its gathering spot is no longer valid.</VFETribalsAutoGathering.ScheduleCancelled>
+    <VFETribalsAutoGathering.ScheduleCancelledTechLevel>Daily tribal gathering schedule cancelled because tribal gathering is no longer available at the colony's current technology level.</VFETribalsAutoGathering.ScheduleCancelledTechLevel>
     <VFETribalsAutoGathering.TooltipHeader>Auto gathering:</VFETribalsAutoGathering.TooltipHeader>
     <VFETribalsAutoGathering.TooltipEnabledAt>Auto gathering is enabled at {0}</VFETribalsAutoGathering.TooltipEnabledAt>
     <VFETribalsAutoGathering.SettingsTitle>VFE Tribals Auto Gathering</VFETribalsAutoGathering.SettingsTitle>

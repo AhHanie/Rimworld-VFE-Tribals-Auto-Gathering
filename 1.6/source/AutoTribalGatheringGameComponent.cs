@@ -60,7 +60,19 @@ namespace VFE_Tribals_Auto_Gathering
 
         public override void GameComponentTick()
         {
-            if (scheduledRitual == null || nextExecutionAbsTick < 0L || GenTicks.TicksAbs < nextExecutionAbsTick)
+            if (scheduledRitual == null)
+            {
+                return;
+            }
+
+            if (!IsScheduledRitualTechLevelEligible())
+            {
+                ClearSchedule();
+                Messages.Message("VFETribalsAutoGathering.ScheduleCancelledTechLevel".Translate(), MessageTypeDefOf.NeutralEvent, historical: false);
+                return;
+            }
+
+            if (nextExecutionAbsTick < 0L || GenTicks.TicksAbs < nextExecutionAbsTick)
             {
                 return;
             }
@@ -95,6 +107,22 @@ namespace VFE_Tribals_Auto_Gathering
             {
                 ClearSchedule();
             }
+        }
+
+        private bool IsScheduledRitualTechLevelEligible()
+        {
+            if (!IsTribalGathering(scheduledRitual))
+            {
+                return false;
+            }
+
+            Faction playerFaction = Faction.OfPlayer;
+            if (playerFaction?.def == null)
+            {
+                return false;
+            }
+
+            return RitualPatternDef.CanUseWithTechLevel(playerFaction.def.techLevel, scheduledRitual.minTechLevel, scheduledRitual.maxTechLevel);
         }
 
         private bool ScheduledTargetIsValid()
