@@ -25,6 +25,11 @@ namespace VFE_Tribals_Auto_Gathering
                 ref ModSettings.ExcludePawnsNeedingMedicalRest,
                 "VFETribalsAutoGathering.ExcludeMedicalRestPawnsTooltip".Translate());
 
+            listing.CheckboxLabeled(
+                "VFETribalsAutoGathering.ExcludeSlavesLabel".Translate(),
+                ref ModSettings.ExcludeSlaves,
+                "VFETribalsAutoGathering.ExcludeSlavesTooltip".Translate());
+
             listing.End();
         }
     }

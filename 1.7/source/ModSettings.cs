@@ -11,12 +11,14 @@ namespace VFE_Tribals_Auto_Gathering
     {
         public static bool ExcludePawnsWithPlayerForcedJobs = false;
         public static bool ExcludePawnsNeedingMedicalRest = true;
+        public static bool ExcludeSlaves = false;
 
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref ExcludePawnsWithPlayerForcedJobs, "excludePawnsWithPlayerForcedJobs", false);
             Scribe_Values.Look(ref ExcludePawnsNeedingMedicalRest, "excludePawnsNeedingMedicalRest", true);
+            Scribe_Values.Look(ref ExcludeSlaves, "excludeSlaves", false);
         }
     }
 }

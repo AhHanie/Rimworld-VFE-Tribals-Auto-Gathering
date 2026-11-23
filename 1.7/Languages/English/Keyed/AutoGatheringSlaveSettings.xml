@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <VFETribalsAutoGathering.ExcludeSlavesLabel>Do not auto-gather slaves</VFETribalsAutoGathering.ExcludeSlavesLabel>
+    <VFETribalsAutoGathering.ExcludeSlavesTooltip>When enabled, colony slaves are excluded from the scheduled daily tribal gathering.</VFETribalsAutoGathering.ExcludeSlavesTooltip>
+</LanguageData>

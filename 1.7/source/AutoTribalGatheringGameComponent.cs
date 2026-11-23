@@ -145,6 +145,11 @@ namespace VFE_Tribals_Auto_Gathering
 
             Dialog_BeginRitual.PawnFilter filter = delegate(Pawn pawn, bool voluntary, bool allowOtherIdeos)
             {
+                if (ModSettings.ExcludeSlaves && pawn.IsSlaveOfColony)
+                {
+                    return false;
+                }
+
                 if (ModSettings.ExcludePawnsNeedingMedicalRest && HealthAIUtility.ShouldSeekMedicalRest(pawn))
                 {
                     return false;
